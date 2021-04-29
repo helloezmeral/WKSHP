@@ -1,0 +1,9 @@
+apiVersion: enterprise.splunk.com/v1beta1
+kind: Standalone
+metadata:
+  name: student921
+  namespace: splunk
+  finalizers:
+    - enterprise.splunk.com/delete-pvc
+spec:
+  storageClassName: "openebs-hostpath"
